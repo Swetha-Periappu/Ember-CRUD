@@ -1,0 +1,65 @@
+*{
+    line-height: 1.6;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+.main-body{
+    min-height: 100vh;
+}
+.constant-width{
+    min-width: 350px;
+}
+a{
+    text-decoration: none;
+    color: rgb(36, 29, 29);
+}
+a:hover{
+    color: rgb(102, 100, 100);
+    text-decoration: none;
+}
+.border-md-right{
+    border-right: 1px solid black;
+}
+.card{
+    min-height: 250px;
+}
+.card-text{
+    max-width: 250px;
+}
+
+ul li{
+    color: rgb(105, 103, 103);
+    list-style: disc;
+    font-size: large;
+}
+.showlist{
+    display: block;
+}
+.showlistno{
+    display: none;
+}
+
+.mobile-view{
+    display: none;
+}
+
+@media (max-width: 992px){
+    .border-md-right{
+        border-right: 0;
+    }
+    .mobile-view{
+        display: block;
+    }
+}
+/* 
+@media (min-width: 993px){
+    .large-view{
+        display: block;
+    }
+} */
+
+textarea{
+    width: 100%;
+}
