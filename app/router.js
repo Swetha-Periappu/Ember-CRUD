@@ -14,8 +14,6 @@ Router.map(function () {
     this.route('concept1');
     this.route('concept2');
     this.route('concept3');
-    // this.route('pages', { path: 'page/:page_id' });
-    // this.route('template', {path: '/*path'});
   });
-  // this.route('pages/subcontent', {path: '/*page_id'});
+  
 });

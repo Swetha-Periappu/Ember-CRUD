@@ -4,5 +4,4 @@ import { tracked } from '@glimmer/tracking';
 
 export default class PagesController extends Controller {
 
-
 }

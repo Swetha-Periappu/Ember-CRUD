@@ -5,12 +5,5 @@
     {{/each}}
 </ul>
 
-{{!-- <ul>
-    {{log 'hi' @list}}
-    {{#each @list as |lists|}}
-        <LinkTo @route={{lists.route}}>{{lists.content}}</LinkTo>
-    {{/each}}
-</ul> --}}
-
 <input type="text" id="listField">
 <button type="button" {{action "addListContent"}}>Add</button>
