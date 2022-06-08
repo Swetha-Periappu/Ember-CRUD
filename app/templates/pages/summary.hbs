@@ -11,7 +11,7 @@
 
 <div id="summary">
     {{#if this.isEditable}}
-        <Textarea rows="20" onchange={{action "save" value='target.value'}} @value={{this.model}} />
+        <Textarea rows="20" @value={{this.model}} />
         <button type="button" onclick={{action (mut this.isEditable) false}}><small>Save</small></button>
     {{else}}
         <p>{{this.model}}</p>
