@@ -3,7 +3,6 @@ import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
 export default class PagesRoute extends Route {
-  
     @action 
     saveEdits(value){
       this.set('model', value);

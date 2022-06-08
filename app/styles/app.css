@@ -28,23 +28,20 @@ a:hover{
 .card-text{
     max-width: 250px;
 }
-
 ul li{
     color: rgb(105, 103, 103);
     list-style: disc;
     font-size: large;
 }
-.showlist{
+.listVisible{
     display: block;
 }
-.showlistno{
+.listInvisible{
     display: none;
 }
-
 .mobile-view{
     display: none;
 }
-
 @media (max-width: 992px){
     .border-md-right{
         border-right: 0;
@@ -53,13 +50,6 @@ ul li{
         display: block;
     }
 }
-/* 
-@media (min-width: 993px){
-    .large-view{
-        display: block;
-    }
-} */
-
 textarea{
     width: 100%;
 }

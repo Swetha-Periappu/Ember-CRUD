@@ -6,7 +6,7 @@ export default class ListOfContentsComponent extends Component {
   @tracked toshowlist = true;
 
   @action
-  toggle() {
+  toggleList() {
     this.toggleProperty('toshowlist');
   }
 }
