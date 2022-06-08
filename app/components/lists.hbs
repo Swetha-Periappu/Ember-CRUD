@@ -1,9 +1,0 @@
-<ul>
-    {{log "hoi" this.contentLists}}
-    {{#each this.contentLists as |lists|}}
-        <li><LinkTo @route={{lists.route}}>{{lists.content}}</LinkTo></li>
-    {{/each}}
-</ul>
-
-<input type="text" id="listField">
-<button type="button" {{action "addListContent"}}>Add</button>
