@@ -24,7 +24,6 @@ export default class ListOfContentsComponent extends Component {
   @action
   addListContent() {
     this.listContent = document.getElementById('listField').value;
-    console.log(this.listContent);
     this.contentLists.pushObject({
       route: 'pages.tutorial',
       content: this.listContent,
