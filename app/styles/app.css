@@ -1,10 +1,6 @@
 *{
     line-height: 1.6;
 }
-.navbar{
-    margin: 0;
-    padding: 0;
-}
 .main-body{
     min-height: 100vh;
 }
@@ -42,6 +38,9 @@ ul li{
 .mobile-view{
     display: none;
 }
+textarea{
+    width: 100%;
+}
 @media (max-width: 992px){
     .border-md-right{
         border-right: 0;
@@ -49,7 +48,4 @@ ul li{
     .mobile-view{
         display: block;
     }
-}
-textarea{
-    width: 100%;
 }
