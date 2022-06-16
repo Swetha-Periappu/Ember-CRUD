@@ -24,6 +24,12 @@ a:hover{
 .card-text{
     max-width: 250px;
 }
+.card-text p{
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 ul li{
     color: rgb(105, 103, 103);
     list-style: disc;

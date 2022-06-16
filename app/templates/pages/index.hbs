@@ -1,27 +1,12 @@
-{{page-title "Index"}}
-
 <div class="h1">Learn to gain...</div>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam numquam temporibus vel, tempora esse libero, in ratione beatae quo cupiditate dicta mollitia necessitatibus saepe itaque est minima doloribus! Voluptatem, obcaecati!</p>
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-    <div class="col">
-        <IndexCard @title="Introduction" @routename="pages.getting-started"/>
-    </div>
-    <div class="col">
-        <IndexCard @title="Tutorial" @routename="pages.tutorial"/>
-    </div>
-    <div class="col">
-        <IndexCard @title="Concept 1" @routename="pages.concept1" />
-    </div>
-    <div class="col">
-        <IndexCard @title="Concept 2" @routename="pages.concept2" />
-    </div>
-    <div class="col">
-        <IndexCard @title="Concept 3" @routename="pages.concept3" />
-    </div>
-    <div class="col">
-        <IndexCard @title="Summary" @routename="pages.summary" />
-    </div>
+    {{#each this.model.items as |item|}}
+        <div class="col">
+            <IndexCard @title={{item.title}} @routename={{item.page_name}} @content={{item.content}} />
+        </div>
+    {{/each}}
 </div>
 
 
