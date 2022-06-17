@@ -30,8 +30,8 @@ export default class ListOfContentsComponent extends Component {
 
   capitalize(pageName){
     let string = pageName;
-    let result = string[0].toUpperCase() + string.substring(1);
-    return result;
+    string = string[0].toUpperCase() + string.substring(1);
+    return string;
   }
 
 }
