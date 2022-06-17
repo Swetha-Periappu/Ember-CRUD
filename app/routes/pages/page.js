@@ -10,5 +10,9 @@ export default class PagesPageRoute extends Route {
     let currentPage = this.pageLists.items.findBy('page_name', page_id);
     return currentPage;
   }
+  // constructor(){
+  //   super();
+  //   console.log('in model');
+  // }
 
 }

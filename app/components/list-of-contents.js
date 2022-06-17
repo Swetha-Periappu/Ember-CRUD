@@ -22,9 +22,16 @@ export default class ListOfContentsComponent extends Component {
     this.pageLists.add({
       route: 'pages.page',
       page_name: this.listContent,
-      title: this.listContent,
+      title: this.capitalize(this.listContent),
       content: '',
     });
     document.getElementById('listField').value = '';
   }
+
+  capitalize(pageName){
+    let string = pageName;
+    let result = string[0].toUpperCase() + string.substring(1);
+    return result;
+  }
+
 }

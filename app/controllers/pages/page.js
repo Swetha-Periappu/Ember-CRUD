@@ -4,4 +4,9 @@ import { service } from '@ember/service';
 
 export default class PagesPageController extends Controller {
   @tracked isEditable = false;
+
+  constructor(){
+    super();
+    console.log("in controller");
+  }
 }
